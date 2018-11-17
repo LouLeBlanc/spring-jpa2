@@ -28,9 +28,9 @@ import edu.brandeis.rseg105.jpa2.domain.Book;
 public class PublishingServiceImpl implements PublishingService {
 	final static String ALL_BOOKS_NATIVE_QUERY =
 			"select id, category_id, isbn, title, price, version from book";
-	
+
 	private static Logger logger = LoggerFactory.getLogger(PublishingServiceImpl.class);
-	
+
 	@PersistenceContext
 	private EntityManager em;
 
@@ -59,7 +59,7 @@ public class PublishingServiceImpl implements PublishingService {
 	public List<Book> findAllByNativeQuery() {
 		return em.createNativeQuery(ALL_BOOKS_NATIVE_QUERY, "bookResult").getResultList();
 	}
-	
+
 	@Override
 	@Transactional(readOnly = true)
 	public List<Book> findBooksByAuthorId(Long id) {
