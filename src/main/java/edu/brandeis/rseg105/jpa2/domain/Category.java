@@ -28,9 +28,9 @@ import javax.persistence.Table;
 public class Category implements Serializable {
 
 	/**
-	 *
+	 * Implementing Serializable
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -3541702319392637955L;
 
 	@Id
 	@Column(name="id")
@@ -39,8 +39,8 @@ public class Category implements Serializable {
 	@Column(name="name")
 	private String			name;
 
-	@OneToMany(mappedBy = "category", cascade=CascadeType.ALL,
-			orphanRemoval=true)
+	@OneToMany(mappedBy = "category",
+			orphanRemoval = true)
 	private Set<Book> books = new HashSet<>();
 
 	/**

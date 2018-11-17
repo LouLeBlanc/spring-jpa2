@@ -61,6 +61,11 @@ import javax.persistence.Version;
  */
 public class Book implements Serializable {
 
+	/**
+	 * Implementing Serializable
+	 */
+	private static final long serialVersionUID = -1606836550546687511L;
+
 	public static final String FIND_BOOK_WITH_AUTHOR_CATEGORY_BY_ID =
 			"Book.findBookWithAuthorCategoryById";
 	public static final String FIND_BOOKS_BY_AUTHOR_ID =
