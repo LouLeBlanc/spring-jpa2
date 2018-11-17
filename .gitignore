@@ -1,0 +1,7 @@
+/target/
+*.swp
+.classpath
+.project
+/.settings/
+*.docx
+run.txt
