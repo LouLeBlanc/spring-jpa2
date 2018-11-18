@@ -36,7 +36,7 @@ public class FindAllBooksNativeApp {
 
 		PublishingService publishingService = ctx.getBean(PublishingService.class); 
 
-		List<Book> books = publishingService.findAll();
+		List<Book> books = publishingService.findAllByNativeQuery();
 
 		logger.info("================================");
 		logger.info("Listing books found by Native Query: ");
