@@ -1,6 +1,6 @@
 /*
  * @author Louis LeBlanc
- * For Homework Assignment 1
+ * For Homework Assignment 2
  * Expert Software Development in Java
  * Brandeis University
  * Instructed by Vitaly Yurik
